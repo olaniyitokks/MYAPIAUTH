@@ -4,11 +4,11 @@ This exercise extensively explains and details my testing strategy against API's
 
 ## Getting Started
 
-These instructions will explain how to install any dependencies, software, and access the public API i used for this exercise.
+These instructions will explain how to install any dependencies, software, and access the public API i utilized for this exercise.
 
 ### Prerequisites
-* Click the hyperlink to download and install <a href="https://www.postman.com/downloads/" target="_blank">Postman</a> (select bit size depending on computer 34/64bit......i will be using 64-bit for this exercise.)
-* For this exercise i will be utilizing <a href="https://rapidapi.com/community/api/open-weather-map/" target="_blank">'RapidAPI'</a> Public API.
+* Click the hyperlink to download and install <a href="https://www.postman.com/downloads/" target="_blank">Postman</a> (select bit size depending on computer 34/64bit......i will be using the 64-bit version for this exercise since that is my laptop's operating bit.)
+* For this exercise I will be utilizing <a href="https://rapidapi.com/community/api/open-weather-map/" target="_blank">'RapidAPI'</a> Public API.
 * This Public API is free but new users would have to create a new an account to have access to the APIKey
 * Navigate to "subscribe to test" on the webpage to signup and get full access to this API.
 * This particular API allows you to get weather data in any location on the earth.
@@ -17,7 +17,7 @@ These instructions will explain how to install any dependencies, software, and a
 ## Running the tests
 #### Authenticating against an API and reusing the token
 1. Launch/Open Postman Desktop App
-2.  On the left tab of postman, Click 'create new collection' and name it. for this exercise i named mine 'TEST'
+2.  On the left tab of postman, Click 'create new collection' and name it. For this exercise I named mine 'TEST'
 3. Paste THE API URL
 ![URL](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/URL.PNG)
 4. Navigate to Authorization Tab, then click on the drop down ribbon to select API Key 
@@ -29,7 +29,7 @@ Authentication method determines type of authorization
 
 #### Making GET/POST requests
 >Continued.... from API Auth above
-1. Check method (POST/PUT/GET/DELETE)...... for this exercise i will be using GET
+1. Check method (POST/PUT/GET/DELETE)...... for this exercise I will be using GET
 ![get1](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/get1.PNG)
 2. Click the params tab and input the parameters relevant to this API from the public API
 ![get2](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/get2.PNG)
@@ -42,9 +42,9 @@ Authentication method determines type of authorization
 #### Performing post request validation tests
 >Continued from GET Requests above.
 1. Using the same parameters and API-Key from the steps above i am going to attempt to perfom a POST request.
-* this is to validate my test.....NB: This particular 'RAPIDAPI' API that i chose for this exercise is GET only. So in order to validate that i am going to test for POST REQUEST
+* this is to validate my test.....NB: This particular 'RAPIDAPI' API that I chose for this exercise is GET only. So in order to validate that I am going to test for POST REQUEST
 2. Change from GET ---> POST request and input the API-key and value 
-3. Since this API is GET only.....i shouldnt be able to do post requests
+3. Since this API is GET only.....I shouldnt be able to do post requests
 ![post_info](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/post_info.PNG)
 
 
@@ -53,10 +53,10 @@ Authentication method determines type of authorization
 * Name them DEV and PROD respectively.
 ![environment](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/environments.PNG)
 
-2. To operate in these 2 environments i am going to assign and call variables for APIKey and the API baseURL in "PROD Environment"
+2. To operate in these 2 environments I am going to assign and call variables for APIKey and the API baseURL in "PROD Environment"
 ![prod](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/prod.PNG)
 
-4. In the Development environment i am going to assign variables to the APIkey only!
+4. In the Development environment I am going to assign variables to the APIkey only!
 ![dev](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/dev.PNG)
 5. PROD environment with new assigned variables (BASEURL AND API-KEY) and GET request working
 ![prod_info](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/prod_info.PNG)
@@ -69,7 +69,7 @@ Authentication method determines type of authorization
 3.  Verify response headers
 4.  Verify correct application state
 5.  Verify basic performance sanity
-6.  After all these checked out i went ahead with Basic positive tests like i did with my GET Request since the API is supposed to be GET only.
+6.  After all these checked out I went ahead with Basic positive tests like I did with my GET Request since the API is supposed to be GET only.
 7.  Extended positive testing with optional parameters.
-8.  Negative testing with valid input like i did by attempting a POST request on my GET ONLY Public API
+8.  Negative testing with valid input like I did by attempting a POST request on my GET ONLY Public API
 9.  Negative testing with invalid input and destructive testing.
