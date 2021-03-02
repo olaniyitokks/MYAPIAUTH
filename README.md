@@ -23,20 +23,20 @@ These instructions will explain how to install any dependencies, software, and a
 4. Navigate to Authorization Tab, then click on the drop down ribbon to select API Key 
 Authentication method determines type of authorization 
 5. In our API, under headers we have our API keys
-![authentication1](https://github.com/olaniyitokks/APIAUTH/blob/main/Authentication1.PNG)
+![authentication1](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/Authentication1.PNG)
 6. Input the api key and value.......NOTE: The 'RAPIDAPI' API-key is unique to each subscribers on this public api....hence the token/key is re-useable!
-![authentication](https://github.com/olaniyitokks/APIAUTH/blob/main/authentication.PNG)
+![authentication](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/authentication.PNG)
 
 #### Making GET/POST requests
 >Continued.... from API Auth above
 1. Check method (POST/PUT/GET/DELETE)...... for this exercise i will be using GET
-![get1](https://github.com/olaniyitokks/APIAUTH/blob/main/get1.PNG)
+![get1](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/get1.PNG)
 2. Click the params tab and input the parameters relevant to this API from the public API
-![get2](https://github.com/olaniyitokks/APIAUTH/blob/main/get2.PNG)
-![get3](https://github.com/olaniyitokks/APIAUTH/blob/main/get3.PNG)
+![get2](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/get2.PNG)
+![get3](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/get3.PNG)
 3. Click "SEND" to excute the Get Request and we get this information back from the public API:
-![get_info1](https://github.com/olaniyitokks/APIAUTH/blob/main/get_info1.PNG)
-![get_info2](https://github.com/olaniyitokks/APIAUTH/blob/main/get_info2.PNG)
+![get_info1](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/get_info1.PNG)
+![get_info2](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/get_info2.PNG)
 
 
 #### Performing post request validation tests
@@ -45,23 +45,23 @@ Authentication method determines type of authorization
 * this is to validate my test.....NB: This particular 'RAPIDAPI' API that i chose for this exercise is GET only. So in order to validate that i am going to test for POST REQUEST
 2. Change from GET ---> POST request and input the API-key and value 
 3. Since this API is GET only.....i shouldnt be able to do post requests
-![post_info](https://github.com/olaniyitokks/APIAUTH/blob/main/post_info.PNG)
+![post_info](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/post_info.PNG)
 
 
 #### Ability to switch environments (dev/prod)
 1. On the left tab of postman, 'Click Create New Environment,' and create 2 new environments.
 * Name them DEV and PROD respectively.
-![environment](https://github.com/olaniyitokks/APIAUTH/blob/main/environments.PNG)
+![environment](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/environments.PNG)
 
 2. To operate in these 2 environments i am going to assign and call variables for APIKey and the API baseURL in "PROD Environment"
-![prod](https://github.com/olaniyitokks/APIAUTH/blob/main/prod.PNG)
+![prod](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/prod.PNG)
 
 4. In the Development environment i am going to assign variables to the APIkey only!
-![dev](https://github.com/olaniyitokks/APIAUTH/blob/main/dev.PNG)
+![dev](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/dev.PNG)
 5. PROD environment with new assigned variables (BASEURL AND API-KEY) and GET request working
-![prod_info](https://github.com/olaniyitokks/APIAUTH/blob/main/prod_info.PNG)
+![prod_info](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/prod_info.PNG)
 6. DEV environment with new assigned variable (API-KEY) and GET request working 
-![dev_info](https://github.com/olaniyitokks/APIAUTH/blob/main/dev_info.PNG)
+![dev_info](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/dev_info.PNG)
 
 # Strategy
 1. Verify correct HTTP status code.
