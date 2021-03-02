@@ -8,7 +8,7 @@ These instructions will explain how to install any dependencies, software, and a
 
 ### Prerequisites
 * Click the hyperlink to download and install <a href="https://www.postman.com/downloads/" target="_blank">Postman</a> (select bit size depending on computer 34/64bit......i will be using 64-bit for this exercise.)
-* For this exercise i will be using <a href="https://rapidapi.com/community/api/open-weather-map/" target="_blank">'RapidAPI'</a> Public API.
+* For this exercise i will be utilizing <a href="https://rapidapi.com/community/api/open-weather-map/" target="_blank">'RapidAPI'</a> Public API.
 * This Public API is free but new users would have to create a new an account to have access to the APIKey
 * Navigate to "subscribe to test" on the webpage to signup and get full access to this API.
 * This particular API allows you to get weather data in any location on the earth.
@@ -19,7 +19,7 @@ These instructions will explain how to install any dependencies, software, and a
 1. Launch/Open Postman Desktop App
 2.  On the left tab of postman, Click 'create new collection' and name it. for this exercise i named mine 'TEST'
 3. Paste THE API URL
-![URL](https://github.com/olaniyitokks/APIAUTH/blob/main/URL.PNG)
+![URL](https://github.com/olaniyitokks/MYAPIAUTH/blob/main/images/URL.PNG)
 4. Navigate to Authorization Tab, then click on the drop down ribbon to select API Key 
 Authentication method determines type of authorization 
 5. In our API, under headers we have our API keys
